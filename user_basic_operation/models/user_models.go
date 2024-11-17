@@ -4,7 +4,7 @@ import "gorm.io/gorm"
 
 type UserModel struct {
 	ID           string `gorm:"type uuid; primary key" json:"id"`
-	UserName     string `json:"userName" `
+	UserName     string `json:"userName"`
 	UserEmail    string `json:"userEmail"`
 	UserPassword string `json:"userPassword" validate:"min=8"`
 }
