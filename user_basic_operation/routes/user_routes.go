@@ -17,5 +17,5 @@ func SetUserRoutes(app *fiber.App, db *gorm.DB) {
 	api.Get("/getUser", userContoller.GetUsers)
 	api.Get("/getUserById/:id", userContoller.GetUserById)
 	api.Delete("/deletUser/:id", userContoller.DeleteUser)
-	api.Put("/updateUser", userContoller.UpdateUser)
+	api.Put("/updateUser/:id", userContoller.UpdateUser)
 }
