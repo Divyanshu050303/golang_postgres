@@ -36,5 +36,6 @@ func main() {
 
 	routes.SetUpBookRoutes(app, db)
 	routes.SetUserRoutes(app, db)
+	routes.SetupAssignBookToUserRoutes(app, db)
 	app.Listen(":8080")
 }

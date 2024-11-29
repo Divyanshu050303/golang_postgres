@@ -11,6 +11,9 @@ func Migrate(db *gorm.DB) error {
 	if err := MigrateUser(db); err != nil {
 		return err
 	}
+	if err := AssignBookToUser(db); err != nil {
+		return err
+	}
 
 	return nil
 }
