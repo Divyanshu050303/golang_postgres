@@ -2,7 +2,7 @@ package models
 
 import "gorm.io/gorm"
 
-type UserModels struct {
+type UserSignUpModels struct {
 	ID           string `gorm:"type uuid; primary key" json:"id"`
 	UserName     string `json:"userName"`
 	UserEmail    string `json:"userEmail"`
@@ -10,5 +10,5 @@ type UserModels struct {
 }
 
 func MigrateUser(db *gorm.DB) error {
-	return db.AutoMigrate(&UserModels{})
+	return db.AutoMigrate(&UserSignUpModels{})
 }
