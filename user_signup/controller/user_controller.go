@@ -131,3 +131,10 @@ func (ctrl *UserController) GetUsers(c *fiber.Ctx) error {
 	return nil
 
 }
+func (ctrl *UserController) ForgotPassword(c *fiber.Ctx) error {
+	return nil
+}
+func (ctrl *UserController) ResetPassword(c *fiber.Ctx) error {
+
+	return nil
+}
